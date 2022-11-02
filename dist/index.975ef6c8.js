@@ -510,7 +510,7 @@ var _franchiseModal = require("./js/franchise-modal");
 var _burgerMenu = require("./js/burger_menu");
 var _productsModal = require("./js/products-modal");
 
-},{"./js/header-modal":"1Gah7","./js/about-modal":"a2ZJK","./js/products-modal":"eUPbQ","./js/location-modal":"2CkwF","./js/franchise-modal":"egoT6","./js/burger_menu":"cx4nl"}],"1Gah7":[function(require,module,exports) {
+},{"./js/header-modal":"1Gah7","./js/about-modal":"a2ZJK","./js/location-modal":"2CkwF","./js/franchise-modal":"egoT6","./js/burger_menu":"cx4nl","./js/products-modal":"eUPbQ"}],"1Gah7":[function(require,module,exports) {
 // HEADER MODAL
 (()=>{
     const refs = {
@@ -539,43 +539,6 @@ var _productsModal = require("./js/products-modal");
     refs.closeAboutModalBtn.addEventListener("click", toggleAboutModal);
     function toggleAboutModal() {
         refs.aboutModal.classList.toggle("is-hidden");
-    }
-})();
-
-},{}],"eUPbQ":[function(require,module,exports) {
-// PRODUCTS MODAL
-// (() => {
-//   const refs = {
-//     openProductsModalBtn: document.querySelectorAll(
-//       '[data-products-modal-open]'
-//     ),
-//     closeProductsModalBtn: document.querySelector(
-//       '[data-products-modal-close]'
-//     ),
-//     productsModal: document.querySelector('[data-products-modal]'),
-//   };
-//   for (item of refs.openProductsModalBtn) {
-//     item.addEventListener('click', toggleProductsModal);
-//   };
-//   refs.closeProductsModalBtn.addEventListener('click', toggleProductsModal);
-//   function toggleProductsModal() {
-//     refs.productsModal.classList.toggle('is-hidden');
-//   };
-// })();
-(()=>{
-    const refs = {
-        openProducts1ModalBtn: document.querySelector("[data-products1-modal-open]"),
-        openProducts2ModalBtn: document.querySelector("[data-products2-modal-open]"),
-        openProducts3ModalBtn: document.querySelector("[data-products3-modal-open]"),
-        closeProductsModalBtn: document.querySelector("[data-products-modal-close]"),
-        productsModal: document.querySelector("[data-products-modal]")
-    };
-    refs.openProducts1ModalBtn.addEventListener("click", toggleProductsModal);
-    refs.openProducts2ModalBtn.addEventListener("click", toggleProductsModal);
-    refs.openProducts3ModalBtn.addEventListener("click", toggleProductsModal);
-    refs.closeProductsModalBtn.addEventListener("click", toggleProductsModal);
-    function toggleProductsModal() {
-        refs.productsModal.classList.toggle("is-hidden");
     }
 })();
 
@@ -625,6 +588,43 @@ var _productsModal = require("./js/products-modal");
         mobileMenuRef.classList.remove("is-open");
         menuBtnRef.classList.remove("is-open");
     });
+})();
+
+},{}],"eUPbQ":[function(require,module,exports) {
+// PRODUCTS MODAL
+// (() => {
+//   const refs = {
+//     openProductsModalBtn: document.querySelectorAll(
+//       '[data-products-modal-open]'
+//     ),
+//     closeProductsModalBtn: document.querySelector(
+//       '[data-products-modal-close]'
+//     ),
+//     productsModal: document.querySelector('[data-products-modal]'),
+//   };
+//   for (item of refs.openProductsModalBtn) {
+//     item.addEventListener('click', toggleProductsModal);
+//   };
+//   refs.closeProductsModalBtn.addEventListener('click', toggleProductsModal);
+//   function toggleProductsModal() {
+//     refs.productsModal.classList.toggle('is-hidden');
+//   };
+// })();
+(()=>{
+    const refs = {
+        openProducts1ModalBtn: document.querySelector("[data-products1-modal-open]"),
+        openProducts2ModalBtn: document.querySelector("[data-products2-modal-open]"),
+        openProducts3ModalBtn: document.querySelector("[data-products3-modal-open]"),
+        closeProductsModalBtn: document.querySelector("[data-products-modal-close]"),
+        productsModal: document.querySelector("[data-products-modal]")
+    };
+    refs.openProducts1ModalBtn.addEventListener("click", toggleProductsModal);
+    refs.openProducts2ModalBtn.addEventListener("click", toggleProductsModal);
+    refs.openProducts3ModalBtn.addEventListener("click", toggleProductsModal);
+    refs.closeProductsModalBtn.addEventListener("click", toggleProductsModal);
+    function toggleProductsModal() {
+        refs.productsModal.classList.toggle("is-hidden");
+    }
 })();
 
 },{}]},["1RB6v","8lqZg"], "8lqZg", "parcelRequired7c6")
